@@ -32,7 +32,7 @@ Antes de la clase se recomienda leer y simular la información contenida en los 
 2. Suponiendo que se tiene una lista de 5 estudiantes dada por:
 
 |Nombre|ID|Nota 1|Nota 2|Nota 3|Nota 3|
-|------|--|-----|---|---|---|---|
+|------|--|-----|---|---|---|
 |Milhouse|001|2.5|2.4|2.9|3.3|
 |Bart|002|0|0|0|0.5|
 |Lisa|003|5|5|5|4.9|
