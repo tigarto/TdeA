@@ -27,9 +27,11 @@ Antes de la clase se recomienda leer y simular la información contenida en los 
 |setGrades|Asignar notas al estudiante|
 |getGrades|Obtener notas del estudiante|
 |printInfo|Imprime información del estudiante|
+|setGrade|Especifica el valor de la i-esima nota|
+|getGrade|Obtiene el valor de la i-esima nota|
 
 
-**Solución**
+**Solución**: A continuación se muestra el código [Student.java](Student.java) en el cual esta codificada la clase anteriormente descrita.
 
 ```java
 public class Student {
@@ -167,7 +169,10 @@ public class Student {
 |Nelson|004|2.9|3.1|1.2|4.0|
 |Rafa|005|2.9|1.5|2.9|3.2|
 
-Hacer las siguientes actividades:
+
+**Nota**: el código solución de todas los puntos que se muestran a continuación vienen de fragmentos tomados del siguiente archivo [StudentAppTest.java](StudentAppTest.java)):
+
+Hacer las siguientes actividades (
   * Crear un vector de 5 objetos tipo Student a partir de la tabla anterior e inicializarlos.
 
 ```java
@@ -207,8 +212,6 @@ for(int i = 0; i < numStudents; i++) {
     estudiantes[i] = new Student(names[i],ids[i],notas[i]);                                            
 }       
 ```
-
-Para comprender observe el siguiente [enlace](http://www.pythontutor.com/java.html#code=public%20class%20Student%20%7B%0A%20%20%0A%20%20%20%20/*%20miembros%20*/%0A%20%20%20%20String%20name%3B%20%20%20%20%20%20//%20Nombre%20del%20estudiante%0A%20%20%20%20String%20id%3B%20%20%20%20%20%20%20%20//%20Identificaci%C3%B3n%20del%20estudiante%0A%20%20%20%20float%20grades%5B%5D%3B%20%20%20//%20Calificaciones%20del%20estudiante%20%28para%20el%20ejemplo%20ser%C3%A1n%204%29%0A%20%20%20%20%0A%0A%20%20%20%20public%20Student%28%29%20%7B%0A%20%20%20%20%20%20%20%20this.name%20%3D%20null%3B%0A%20%20%20%20%20%20%20%20this.id%20%3D%20null%3B%0A%20%20%20%20%20%20%20%20this.grades%20%3D%20new%20float%5B4%5D%3B%0A%20%20%20%20%7D%0A%20%20%20%20%0A%0A%20%20%20%20public%20Student%28String%20name,%20String%20id%29%20%7B%0A%20%20%20%20%20%20%20%20this.name%20%3D%20name%3B%0A%20%20%20%20%20%20%20%20this.id%20%3D%20id%3B%0A%20%20%20%20%20%20%20%20this.grades%20%3D%20new%20float%5B4%5D%3B%0A%20%20%20%20%7D%0A%20%20%20%20%0A%0A%20%20%20%20public%20Student%28String%20name,%20String%20id,%20float%5B%5D%20grades%29%20%7B%0A%20%20%20%20%20%20%20%20this.name%20%3D%20name%3B%0A%20%20%20%20%20%20%20%20this.id%20%3D%20id%3B%0A%20%20%20%20%20%20%20%20this.grades%20%3D%20grades%3B%0A%20%20%20%20%7D%0A%20%20%20%20%0A%0A%20%20%20%20public%20void%20setName%28String%20name%29%20%7B%0A%20%20%20%20%20%20%20%20this.name%20%3D%20name%3B%0A%20%20%20%20%7D%0A%0A%0A%20%20%20%20public%20void%20setId%28String%20id%29%20%7B%0A%20%20%20%20%20%20%20%20this.id%20%3D%20id%3B%0A%20%20%20%20%7D%0A%20%20%20%20%0A%0A%20%20%20%20public%20void%20setGrades%28float%5B%5D%20grades%29%20%7B%0A%20%20%20%20%20%20%20%20this.grades%20%3D%20grades%3B%0A%20%20%20%20%7D%0A%20%20%20%20%0A%0A%20%20%20%20public%20String%20getName%28%29%20%7B%0A%20%20%20%20%20%20%20%20return%20name%3B%0A%20%20%20%20%7D%0A%20%20%20%20%0A%0A%20%20%20%20public%20String%20getId%28%29%20%7B%0A%20%20%20%20%20%20%20%20return%20id%3B%0A%20%20%20%20%7D%0A%20%20%20%20%0A%0A%20%20%20%20public%20float%5B%5D%20getGrades%28%29%20%7B%0A%20%20%20%20%20%20%20%20return%20grades%3B%0A%20%20%20%20%7D%0A%20%20%20%20%0A%0A%20%20%20%20public%20void%20printInfo%28%29%20%7B%0A%20%20%20%20%20%20%20%20System.out.println%28%22-Nombre%3A%20%22%20%2B%20this.name%29%3B%0A%20%20%20%20%20%20%20%20System.out.println%28%22-Identificaci%C3%B3n%3A%20%22%20%2B%20this.id%29%3B%0A%20%20%20%20%20%20%20%20System.out.println%28%22-Notas%3A%22%29%3B%0A%20%20%20%20%20%20%20%20int%20i%20%3D%201%3B%0A%20%20%20%20%20%20%20%20for%28float%20nota%3A%20this.grades%29%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20System.out.println%28%22%20%20%22%20%2B%20i%20%2B%20%22.%20%22%20%2B%20nota%29%3B%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%20%20i%2B%2B%3B%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%20%20%20%20%0A%20%20%20%20%0A%0A%20%20%20%20public%20void%20setGrade%28int%20numGrade,%20float%20grade%29%20%7B%0A%20%20%20%20%20%20%20%20this.grades%5BnumGrade%5D%20%3D%20grade%3B%0A%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20public%20float%20getGrade%28int%20numGrade%29%20%7B%0A%20%20%20%20%20%20%20%20return%20this.grades%5BnumGrade%5D%3B%20%20%20%20%0A%20%20%20%20%7D%0A%20%20%20%20public%20static%20void%20main%28String%5B%5D%20args%29%20%7B%0A%20%20%20%20%20%20final%20int%20numStudents%20%3D%205%3B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20//%20Array%20con%20los%20nombres%0A%20%20%20%20%20%20%20%20String%20names%5B%5D%20%3D%20%7B%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22Milhouse%22,%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22Bart%22,%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22Lisa%22,%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22Nelson%22,%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22Rafa%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%3B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20//%20Array%20con%20los%20ids%0A%20%20%20%20%20%20%20%20String%20ids%5B%5D%20%3D%20%7B%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22001%22,%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22002%22,%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22003%22,%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22004%22,%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22005%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%3B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20//%20Matrix%20con%20las%20notas%0A%20%20%20%20%20%20%20%20float%20notas%5B%5D%5B%5D%20%3D%20%7B%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7B%202.5f,%202.4f,%202.9f,%203.3f%20%7D,%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7B%200f,%200f,%200f,%200.5f%20%7D,%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7B5f,%205f,%205f,%204.9f%7D,%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7B2.9f,%203.1f,%201.2f,%204.0f%7D,%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7B2.9f,%201.5f,%202.9f,%203.2f%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%3B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20System.out.println%28%22**%20Creando%20un%20array%20de%205%20objetos%20tipo%20estudiante%20**%22%29%3B%0A%20%20%20%20%20%20%20%20/*%20Creaci%C3%B3n%20de%20referencia%20a%20un%20array%20de%20Objetos%20tipo%20Estudiante*/%0A%20%20%20%20%20%20%20%20Student%20estudiantes%5B%5D%20%3D%20new%20Student%5BnumStudents%5D%3B%0A%20%20%20%20%20%20%20%20for%28int%20i%20%3D%200%3B%20i%20%3C%20numStudents%3B%20i%2B%2B%29%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20//%20Inicializando%20cada%20uno%20de%20los%20elementos%20del%20array%0A%20%20%20%20%20%20%20%20%20%20%20%20estudiantes%5Bi%5D%20%3D%20new%20Student%28names%5Bi%5D,ids%5Bi%5D,notas%5Bi%5D%29%3B%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%7D%0A%7D&cumulative=false&curInstr=0&heapPrimitives=nevernest&mode=display&origin=opt-frontend.js&py=java&rawInputLstJSON=%5B%5D&textReferences=false)
 
 * Imprimir cada uno de los elementos del vector creado. (Para ello use el método printInfo).
 
@@ -271,9 +274,9 @@ Para el caso la salida en pantalla de este segmento de código será:
 ```java
 System.out.println("** Prueba de los metodos getter **");
 /* Verificando los metodos getter */
-String nomBart = estudiantes[2].getName();
-String idBart = estudiantes[2].getId();
-float  [] notasBart = estudiantes[2].getGrades();
+String nomBart = estudiantes[1].getName();
+String idBart = estudiantes[1].getId();
+float  [] notasBart = estudiantes[1].getGrades();
         
 /* Imprimiendo las variables obtenidas */
 System.out.println("---------------------------");        
@@ -291,10 +294,10 @@ En el codigo anterior, se imprimió en pantalla los miembros obtenidos. La salid
 
 ```** Prueba de los metodos getter **
 ---------------------------
-Nombre: Lisa
-ID: 003
+Nombre: Bart
+ID: 002
 Notas: 
-5.0 5.0 5.0 4.9 
+0.0 0.0 0.0 0.5 
 ---------------------------
 ```
 
@@ -353,12 +356,20 @@ Nota[3]: 3.2
   3. 3.0
   4. 3.2
 ```
+3. En el anterior codigo se creo un programa con el cual fue posible probar el correcto funcionamiento de la clase **Student**. Para este punto, realizar una aplicación que permita la interacción con un usuario según su rol tal y como muestra a continuación.
+
+**Funciones estudiante**:
+* Consultar Datos
+* Consultar notas
+
+**Funciones profesor**:
+* Imprimir la lista
+* Mostrar datos de un estudiante 
+* Corregir nota.
 
 
+**Solución**: La solución se encuentra decrita en el siguiente archivo: [StudentApp.java])(StudentApp.java).
 
-Crear una lista con todos estos estudiantes. Y definir un programa que permita interactuar con esto.
-
-Crear una lista usando POO y definir un programa que permita interactuar con estos.
-
-
+## Enlaces ##
+1. https://www.javaguicodexample.com/javadesktopguinetbeans4.html
 
