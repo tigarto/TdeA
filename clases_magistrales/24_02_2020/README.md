@@ -368,7 +368,7 @@ Nota[3]: 3.2
 * Corregir nota.
 
 
-**Solución**: La solución se encuentra decrita en el siguiente archivo: [StudentApp.java)(StudentApp.java).
+**Solución**: La solución se encuentra decrita en el siguiente archivo: [StudentApp.java](StudentApp.java).
 
 ## Enlaces ##
 1. https://www.javaguicodexample.com/javadesktopguinetbeans4.html
