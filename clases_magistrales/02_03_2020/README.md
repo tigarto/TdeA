@@ -6,6 +6,8 @@ Los ejemplos fueron tomados del libro **Programación en Java del analisis al di
 
 1. [Interfaz sencilla para calcular el area y el perimetro de un rectangulo](./ejemplo1).
 2. [Interfaz mejorada (mas no funcional) para calcular el area y el perimetro de un rectangulo](./ejemplo2).
+3. [Interfaz del ejemplo 2 (ya funcional) para calcular el area y el perimetro de un rectangulo](./ejemplo3).
+4. [Interfaz sencilla que permite convertir de grados Celsius a Fahrenheit y viceversa](./ejemplo4).
 
 ## Ejercicios de refuerzo ##
 
