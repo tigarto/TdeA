@@ -8,6 +8,8 @@ Los ejemplos fueron tomados del libro **Programación en Java del analisis al di
 2. [Interfaz mejorada (mas no funcional) para calcular el area y el perimetro de un rectangulo](./ejemplo2).
 3. [Interfaz del ejemplo 2 (ya funcional) para calcular el area y el perimetro de un rectangulo](./ejemplo3).
 4. [Interfaz sencilla que permite convertir de grados Celsius a Fahrenheit y viceversa](./ejemplo4).
+5. [Interfaz sencilla (diseñada en Netbeans) que permite convertir de grados Celius a Fahrenheit y viceversa](./ejemplo5).
+6. [Interfaz sencilla (diseñada en Netbeans) para calcular el area y el perimetro de manera similar al propuesto en el ejemplo 3. La diferencia es que aqui se hacen uso de Objetos](./ejemplo3).
 
 ## Ejercicios de refuerzo ##
 
