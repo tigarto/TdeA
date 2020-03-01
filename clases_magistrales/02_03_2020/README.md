@@ -2,8 +2,10 @@
 
 ## Ejemplos resueltos ##
 
-1. [Interfaz sencilla para calcular el area y el perimetro de un rectangulo](./ejemplo1).
+Los ejemplos fueron tomados del libro **Programación en Java del analisis al diseño de programas** de **D. S.  Malik**
 
+1. [Interfaz sencilla para calcular el area y el perimetro de un rectangulo](./ejemplo1).
+2. [Interfaz mejorada (mas no funcional) para calcular el area y el perimetro de un rectangulo](./ejemplo2).
 
 ## Ejercicios de refuerzo ##
 
