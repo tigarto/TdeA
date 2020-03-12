@@ -3,7 +3,7 @@ import java.util.*;
 public class TestProgClock {
   static Scanner console = new Scanner(System.in);
   public static void main(String[] args) {
-    Clock myClock = new Clock(5, 4, 30) //Linea 1
+    Clock myClock = new Clock(5, 4, 30); //Linea 1
     Clock yourClock = new Clock(); //Linea 2
     int horas; //Linea 3
     int minutos; //Linea 4
@@ -33,10 +33,10 @@ public class TestProgClock {
    System.out.println(); //Linea 24
    myClock.setTime(horas, minutos, segundos); //Linea 25
    System.out.print("Linea 26: Nueva hora de " +
-                    "(myClock: "); //Linea 26
+                    "myClock: "); //Linea 26
    myClock.printTime(); //Linea 27
-   System.println(); //Linea 28
-   myClock.incrementSegundos(); //Linea 29
+   System.out.println(); //Linea 28
+   myClock.incrementSeconds();//Linea 29
    System.out.print("Linea 30: Despues " + 
                     "de incrementar en un segundo " + 
                     "la hora, myClock: "); //Linea 30
