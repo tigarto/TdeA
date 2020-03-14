@@ -1,0 +1,82 @@
+import javax.swing.*;
+2 3
+/**
+4 The KiloConverter class displays a JFrame that
+5 lets the user enter a distance in kilometers. When
+6 the Calculate button is clicked, a dialog box is
+7 displayed with the distance converted to miles.
+8 */
+9
+10 public class KiloConverter extends JFrame
+11 {
+12 private JPanel panel; // To reference a panel
+13 private JLabel messageLabel; // To reference a label
+14 private JTextField kiloTextField; // To reference a text field
+15 private JButton calcButton; // To reference a button
+16 private final int WINDOW_WIDTH = 310; // Window width
+17 private final int WINDOW_HEIGHT = 100;// Window height
+18
+19 /**
+20 Constructor
+21 */
+22
+23 public KiloConverter()
+24 {
+25 // Set the window title.
+26 setTitle("Kilometer Converter");
+27
+28 // Set the size of the window.
+29 setSize(WINDOW_WIDTH, WINDOW_HEIGHT);
+30
+31 // Specify what happens when the close button is clicked.
+32 setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+33
+34 // Build the panel and add it to the frame.
+35 buildPanel();
+36
+37 // Add the panel to the frame's content pane.
+38 add(panel);
+39
+40 // Display the window.
+41 setVisible(true);
+42 }
+43
+44 /**
+45 The buildPanel method adds a label, a text field,
+46 and a button to a panel.
+47 */
+48
+49 private void buildPanel()
+50 {
+51 // Create a label to display instructions.
+52 messageLabel = new JLabel("Enter a distance " +
+53 "in kilometers");
+
+54
+55 // Create a text field 10 characters wide.
+56 kiloTextField = new JTextField(10);
+57
+58 // Create a button with the caption "Calculate".
+59 calcButton = new JButton("Calculate");
+60
+61 // Create a JPanel object and let the panel
+62 // field reference it.
+63 panel = new JPanel();
+64
+65 // Add the label, text field, and button
+66 // components to the panel.
+67 panel.add(messageLabel);
+68 panel.add(kiloTextField);
+69 panel.add(calcButton);
+70 }
+71
+72 /**
+73 main method
+74 */
+75
+76 public static void main(String[] args)
+77 {
+78 new KiloConverter();
+79 }
+80 }
+
