@@ -443,6 +443,8 @@ Nota[3]: 3.2
 
 **Solución**: La solución se encuentra decrita en el siguiente archivo: [StudentApp.java](StudentApp.java). En el siguiente [enlace](https://repl.it/@HENRYALBERTOALB/studentApp2) se puede ejecutar la aplicación online.
 
+Una versión mejorada haciendo uso con ArrayList se encuentra en el siguiente [directorio](./student_array_list) y puede ser ejecutada online siguiendo el siguiente [enlace](https://repl.it/@HENRYALBERTOALB/studentAppv3)
+
 ## Enlaces ##
 1. https://www.javaguicodexample.com/javadesktopguinetbeans4.html
 
