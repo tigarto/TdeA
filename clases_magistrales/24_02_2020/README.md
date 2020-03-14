@@ -170,9 +170,82 @@ public class Student {
 |Rafa|005|2.9|1.5|2.9|3.2|
 
 
-**Nota**: el código solución de todas los puntos que se muestran a continuación vienen de fragmentos tomados del siguiente archivo [StudentAppTest.java](StudentAppTest.java)):
+**Nota**: el código solución de todas los puntos que se muestran a continuación vienen de fragmentos tomados del siguiente archivo [StudentAppTest.java](StudentAppTest.java)); cuando este código se ejecuta (lo cual puede hacer dando siguiendo el siguiente [enlace](https://repl.it/@HENRYALBERTOALB/studentTest)) la salida completa es la siguiente:
 
-Hacer las siguientes actividades (
+```
+** Creando un array de 5 objetos tipo estudiante **
+** Prueba de la función printInfo **
+-Nombre: Milhouse
+-Identificación: 001
+-Notas:
+  1. 2.5
+  2. 2.4
+  3. 2.9
+  4. 3.3
+
+-Nombre: Bart
+-Identificación: 002
+-Notas:
+  1. 0.0
+  2. 0.0
+  3. 0.0
+  4. 0.5
+
+-Nombre: Lisa
+-Identificación: 003
+-Notas:
+  1. 5.0
+  2. 5.0
+  3. 5.0
+  4. 4.9
+
+-Nombre: Nelson
+-Identificación: 004
+-Notas:
+  1. 2.9
+  2. 3.1
+  3. 1.2
+  4. 4.0
+
+-Nombre: Rafa
+-Identificación: 005
+-Notas:
+  1. 2.9
+  2. 1.5
+  3. 2.9
+  4. 3.2
+
+** Prueba de los metodos getter **
+---------------------------
+Nombre: Lisa
+ID: 003
+Notas:
+5.0 5.0 5.0 4.9
+---------------------------
+** Prueba de los metodos setter **
+-Nombre: Pepe
+-Identificación: 006
+-Notas:
+  1. 1.0
+  2. 2.0
+  3. 3.0
+  4. 4.0
+
+** Prueba los metodos para asignar y obtener la nota individual **
+Nota[3]: 3.2
+
+-Nombre: Pepe
+-Identificación: 006
+-Notas:
+  1. 1.0
+  2. 2.0
+  3. 3.0
+  4. 3.2
+```
+
+En este código se llevan a cabo las tareas que se solicitan a continuación. A continuación se mostrará el fragmento de código de cada tarea y se mostrará la salida asociada a este fragmento:
+
+Hacer las siguientes actividades:
   * Crear un vector de 5 objetos tipo Student a partir de la tabla anterior e inicializarlos.
 
 ```java
@@ -368,7 +441,7 @@ Nota[3]: 3.2
 * Corregir nota.
 
 
-**Solución**: La solución se encuentra decrita en el siguiente archivo: [StudentApp.java](StudentApp.java).
+**Solución**: La solución se encuentra decrita en el siguiente archivo: [StudentApp.java](StudentApp.java). En el siguiente [enlace](https://repl.it/@HENRYALBERTOALB/studentApp2) se puede ejecutar la aplicación online.
 
 ## Enlaces ##
 1. https://www.javaguicodexample.com/javadesktopguinetbeans4.html
